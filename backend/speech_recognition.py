@@ -11,11 +11,11 @@ pipe = pipeline(
   device=device,
 )
 
-ds = load_dataset("hf-internal-testing/librispeech_asr_dummy", "clean", split="validation")
-sample = ds[0]["audio"]
+# ds = load_dataset("hf-internal-testing/librispeech_asr_dummy", "clean", split="validation")
+sample = "output.wav"
 
-prediction = pipe(sample.copy(), batch_size=8)["text"]
+prediction = pipe(sample, batch_size=8)["text"]
+print(prediction)
 
 # we can also return timestamps for the predictions
 prediction = pipe(sample.copy(), batch_size=8, return_timestamps=True)["chunks"]
-print(prediction)
