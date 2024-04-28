@@ -1,10 +1,9 @@
-
+# backend\recorder.py
 import argparse
 import struct
 import wave
 
 from pvrecorder import PvRecorder
-
 
 def main():
     parser = argparse.ArgumentParser()
