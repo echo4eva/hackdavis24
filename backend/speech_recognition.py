@@ -19,7 +19,6 @@ def main():
 
   # we can also return timestamps for the predictions
   # prediction = pipe(sample.copy(), batch_size=8, return_timestamps=True)["chunks"]
-
   return prediction
 
 if __name__ == "__main__":
