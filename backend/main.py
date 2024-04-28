@@ -1,13 +1,16 @@
 # backend\main.py
-from backend.recorder import main as record_audio
-from backend.speech_recognition import main as recognize_speech
+from recorder import main as record_audio
+from speech_recognition import main as recognize_speech
 
 def main():
     # Record audio and save to a file
-    record_audio("output.wav")
+    print("Recording audio")
+    record_audio()
+    print("Done recording audio")
 
     # Perform speech recognition on the recorded audio
-    recognized_text = recognize_speech("output.wav")
+    print("Doing speech to text")
+    recognized_text = recognize_speech()
     print(f"Recognized text: {recognized_text}")
 
 if __name__ == "__main__":
