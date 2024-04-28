@@ -8,6 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.10"
 pvrecorder = "^1.2.2"
+datasets = "^2.19.0"
+transformers = "^4.40.1"
+torch = "^2.3.0"
 
 [build-system]
 requires = ["poetry-core"]
