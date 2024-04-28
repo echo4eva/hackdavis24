@@ -22,7 +22,7 @@ def main():
     parser.add_argument(
         "--output_wav_path",
         help="Path to file to store raw audio.",
-        default=None)
+        default="output.mp3")
 
     args = parser.parse_args()
 
