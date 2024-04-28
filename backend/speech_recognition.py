@@ -18,3 +18,4 @@ prediction = pipe(sample.copy(), batch_size=8)["text"]
 
 # we can also return timestamps for the predictions
 prediction = pipe(sample.copy(), batch_size=8, return_timestamps=True)["chunks"]
+print(prediction)
